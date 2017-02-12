@@ -10,6 +10,8 @@ defmodule Amulet.Mixfile do
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
      aliases: aliases(),
+     test_coverage: [tool: ExCoveralls],
+     preferred_cli_env: ["coveralls": :test, "coveralls.detail": :test, "coveralls.post": :test, "coveralls.html": :test],
      deps: deps()]
   end
 
@@ -34,6 +36,7 @@ defmodule Amulet.Mixfile do
      {:cors_plug, "~> 1.1"},
      {:cowboy, "~> 1.0"},
      {:credo, "~> 0.5", only: [:dev, :test]},
+     {:excoveralls, "~> 0.6", only: :test},
      {:gettext, "~> 0.11"},
      {:phoenix, "~> 1.2.1"},
      {:phoenix_ecto, "~> 3.0"},
