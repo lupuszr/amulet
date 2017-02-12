@@ -26,6 +26,7 @@ defmodule Amulet.ConnCase do
       import Ecto.Query
 
       import Amulet.Router.Helpers
+      import Bureaucrat.Helpers
 
       # The default endpoint for testing
       @endpoint Amulet.Endpoint
