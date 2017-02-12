@@ -1,5 +1,7 @@
 # Amulet
 
+[![CircleCI](https://circleci.com/gh/lupuszr/amulet.svg?style=svg)](https://circleci.com/gh/lupuszr/amulet)
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
