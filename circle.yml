@@ -13,6 +13,8 @@ dependencies:
     - asdf plugin-add erlang https://github.com/asdf-vm/asdf-erlang.git || true
     - asdf plugin-add elixir https://github.com/asdf-vm/asdf-elixir.git || true
     - asdf install
+    - asdf plugin-list
+    - source ~/.bashrc
     - mix local.hex --force
     - mix local.rebar --force
   override:
